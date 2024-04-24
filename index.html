@@ -6,15 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ressentiment</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="./source/img/RessentimentLogo.png" alt="로고" class="logo">
-    <nav>
-        <button id="infoBtn">Info</button>
-        <button id="aboutBtn">About</button>
-    </nav>
+    <div class="logo">Ressetiment</div>
+    <div class="menu">
+      <a href="" onclick="showInfo()">Info</a>
+      <a href="./about.html" onclick="showAbout()">About</a>
+    </div>
   </header>
+  <div class="image-container">
+    <div class="image-text">
+      <div class="text day">2024.05.17-2024.05.19</div><br>
+      <div class="text title">Ressentiment</div><br>
+      <div class="text caption">‘르상티망’은 가상의 세계를 구축해 사회가 정해주는 답을 따라가는 행태를 비판하고 <br>
+        자신의 생각, 개성을 찾자는 메시지가 담긴 참여형 미디어 아트입니다</div>
+    </div>
+  </div>
+  <div class="centered-group">
+    <div class="text-kr">
+      <!-- 텍스트 내용 -->
+      <p>(임의) 관객이 구 형태의 컨트롤러를 직접 조작하고,<br>
+        그 행동의 결과를 실시간으로 모니터를 통해  확인할 수 있는 인터랙티브 미디어 아트</p>
+    </div>
+    <div class="image-group">
+      <!-- 이미지 -->
+      <div class="gif-text">
+        <p>Introducing,</p>
+        <p class = "text-big">Rere</p>
+        <div class="gif-text-bottom">
+          <p>
+            관객과 작품의 상호작용 결과가 ‘르르’란 캐릭터로 표현됩니다.<br>
+            다채로운 색상을 품은 르르가 사회 속에서 어떻게 변화하고, 또 변화시키는지 지켜보세요! 
+          </p>  
+        </div>
+      </div>
+      <img src="./source/gif/blackBG_rere2.gif" alt="르르" width=40%>
+    </div>
+    <div class="detail-text">
+      <div class="detail-context">
+
+      </div>
+    </div>
+  </div>  
 <script src="script.js"></script>
 </body>
 </html>

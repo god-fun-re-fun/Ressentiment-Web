@@ -1,0 +1,45 @@
+body, header, nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222;
+
+  color: #FFF;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+
+  height: 5000px;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 4.5px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none; /* 밑줄 없애기 */
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-image {
+  text-align: center; /* 이미지를 수평 중앙 정렬 */
+}
+
+.about-image img{
+  width: 70%;
+  height: auto;
+}

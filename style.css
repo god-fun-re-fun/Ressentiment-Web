@@ -9,7 +9,7 @@ body, header, nav {
   font-style: normal;
   line-height: normal;
 
-  height: 3000px;
+  height: 5000px;
   
 }
 
@@ -17,50 +17,43 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  top: 0; /* 상단에 위치 */
-  left: 0; /* 왼쪽 끝 */
-  right: 0; /* 오른쪽 끝 */
-  height: 120px;
+  height: 80px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .logo {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 4.5px;
-
-  margin: 28px 0px 0px 80px;
-}
-
-.menu {
-  font-size: 24px;
-  margin: 28px 90px 0px 0px;
 }
 
 .menu a {
   color: white;
   text-decoration: none; /* 밑줄 없애기 */
+  font-size: 16px;
   font-weight: 400;
-  margin: 0 10px;
 }
 
 /* 이미지를 배경으로 설정 */
-.image-container::before {
-  content: "";
-  display: block;
-  background-image: url('./source/img/MainBG.png');; /* 이미지 경로 */
-  background-size: cover;
-  background-position: center;
-  margin-top: 12px;
-  width: 100%;
-  height: 984px;
-  z-index: -1; /* 텍스트가 이미지 위에 오도록 설정 */
+.image-container {
+  display: flex; /* flex 컨테이너 설정 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  position: relative; /* 상대 위치 설정 */
+  width: 100%; /* 너비 설정 */
+  height: 864px; /* 높이 설정 */
+  margin-top: 12px; /* 상단 마진 */
+  background-image: url('./source/img/MainBG.png'); /* 이미지 경로 */
+  background-size: cover; /* 배경 이미지 커버 */
+  background-position: center; /* 배경 이미지 중앙 정렬 */
 }
 
 .image-text {
-  position: absolute; /* 절대 위치를 사용하여 정확한 위치 지정 */
-  bottom: 172px; /* 아래에서 20px의 위치 */
-  left: 120px; /* 왼쪽에서 20px의 위치 */
+  position: relative; /* 상대 위치 설정 */
+  z-index: 1; /* 텍스트가 이미지 위에 오도록 설정 */
+  margin-top: 380px;
+  width: 70%;
 }
 
 .text {
@@ -70,30 +63,48 @@ header {
 }
 
 .day {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 1.76px;
 }
 
 /* 추가적으로 특정 클래스에 대한 스타일을 더 세밀하게 조정할 수 있습니다. 예를 들어: */
 .title {
-  font-size: 128px;
+  font-size: 96px;
   font-weight: 700;
 }
 
 .caption {
   font-family: "Pretendard Variable";
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 36px */
   letter-spacing: 0.528px;
 }
 
+/* 가운데 정렬 그룹 */
 .centered-group {
-  margin-top: 20px; /* image-container와의 간격 조정 */
-  padding-left: 120px; /* 일관된 정렬을 위해 */
-  display: block;
+  width: 80%;
+  margin: 0 auto; /* 수평 중앙 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 내부 요소 수평 중앙 정렬 */
+  justify-content: center; /* 내부 요소 수직 중앙 정렬 */
+}
+
+.control-section {
+  margin-top: 320px;
+}
+
+.control-img {
+  text-align: center;
+  width: 100%;
+}
+
+.control-img img {
+  width: 356.617px;
+  height: 194.352px;
 }
 
 .text-kr {
@@ -108,32 +119,20 @@ header {
   font-weight: 500;
   line-height: 150%; /* 54px */
   letter-spacing: 0.792px;
-
-  margin-top: 440px;
-  margin-bottom: 440px;
 }
 
-.image-group {
-  display: flex; /* Flex 컨테이너 설정 */
-  justify-content: space-between; /* 내부 요소들 사이에 공간을 균등하게 배분 */
-  align-items: center; /* 세로 축 중앙 정렬 */
-}
-
-.image-group img {
-  margin-right: 280px;
-  width: 40%; /* 이미지의 너비를 40%로 설정 */
-  height: auto; /* 이미지의 높이를 자동으로 설정하여 비율 유지 */
+/* 르르 안녕 섹션 */
+.rere-section {
+  margin-top: 587px;
 }
 
 .gif-text {
+  text-align: left;
   display: flex; /* Flexbox 레이아웃 사용 */
   flex-direction: column; /* 요소들을 수직 방향으로 정렬 */
-
-  margin-left: 480px;
-  margin-top: -600px;
 }
 
-.image-group p {
+.rere-section p {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -141,7 +140,7 @@ header {
   margin-bottom: 0px;
 }
 
-.image-group .text-big {
+.rere-section .text-big {
   font-size: 128px;
   font-style: normal;
   font-weight: 700;
@@ -149,18 +148,87 @@ header {
   margin-top: 0px;
 }
 
+.rere-img {
+  margin-top: -200px;
+  margin-left: 120px;
+  text-align: right;
+  width: 100%;
+}
+
+.rere-section img {
+  text-align: right;
+  width: 50%; /* 이미지의 너비를 40%로 설정 */
+  height: auto; /* 이미지의 높이를 자동으로 설정하여 비율 유지 */
+}
+
 .gif-text-bottom p {
-  position: absolute;
   color: #FFF;
   font-family: "Pretendard Variable";
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 36px */
   letter-spacing: 0.528px;
+  text-align: left;
+  margin-top: -88px;
+}
 
-  width: 800px;
-  margin-top: 500px;
+/* 디테일 섹션 */
+.detail-section {
+  margin-top: 900px;
+}
+
+.detail-title pre {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.detail-context pre {
+  text-align: center;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.528px;
+}
+
+.detail-section p {
+  font-family: "Montserrat Alternates";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.detail-gray {
+  margin-top: 2800px;
+  text-align: center;
+}
+
+.detail-red {
+  text-align: center;
+}
+
+.detail-green {
+  text-align: center;
+}
+
+.detail-blue {
+  text-align: center;
+}
+
+footer {
+  margin-top: 1200px;
+}
+
+footer img {
+  width: 90%;
+  height: auto;
 }
 
 /* 반응형 디자인 */

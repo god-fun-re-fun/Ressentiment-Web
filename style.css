@@ -22,10 +22,12 @@ header {
   margin: 0 auto;
 }
 
-.logo {
+.logo a {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 4.5px;
+  color: white;
+  text-decoration: none; /* 밑줄 없애기 */
 }
 
 .menu a {
@@ -33,6 +35,10 @@ header {
   text-decoration: none; /* 밑줄 없애기 */
   font-size: 16px;
   font-weight: 400;
+}
+
+.menu .first {
+  margin-right: 42px;
 }
 
 /* 이미지를 배경으로 설정 */
@@ -109,11 +115,21 @@ header {
 
 .text-kr {
   color: #FFF;
-  font-family: "Pretendard Variable";
   font-style: normal;
 }
 
 .text-kr p {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
+.text-kr pre {
+  font-family: "Pretendard Variable";
   font-size: 28px;
   text-align: center;
   font-weight: 500;
@@ -123,7 +139,8 @@ header {
 
 /* 르르 안녕 섹션 */
 .rere-section {
-  margin-top: 587px;
+  margin-top: 400px;
+  margin-left: 100px;
 }
 
 .gif-text {
@@ -142,9 +159,9 @@ header {
 
 .rere-section .text-big {
   font-size: 128px;
-  font-style: normal;
+  font-style: italic;
   font-weight: 700;
-  line-height: normal;
+  line-height: 100%;
   margin-top: 0px;
 }
 
@@ -157,25 +174,27 @@ header {
 
 .rere-section img {
   text-align: right;
-  width: 50%; /* 이미지의 너비를 40%로 설정 */
+  width: 70%; /* 이미지의 너비를 40%로 설정 */
   height: auto; /* 이미지의 높이를 자동으로 설정하여 비율 유지 */
 }
 
 .gif-text-bottom p {
   color: #FFF;
   font-family: "Pretendard Variable";
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 36px */
   letter-spacing: 0.528px;
   text-align: left;
-  margin-top: -88px;
+  margin-top: -128px;
 }
 
 /* 디테일 섹션 */
 .detail-section {
-  margin-top: 900px;
+  margin-top: 1000px;
+  width: 100%;
+  text-align: center;
 }
 
 .detail-title pre {
@@ -188,6 +207,7 @@ header {
 }
 
 .detail-context pre {
+  color: #FFF;
   text-align: center;
   font-family: "Pretendard Variable";
   font-size: 24px;
@@ -197,33 +217,78 @@ header {
   letter-spacing: 0.528px;
 }
 
-.detail-section p {
-  font-family: "Montserrat Alternates";
-  font-size: 128px;
+.detail-context p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.528px;
+
+  margin-top: 90px;
+}
+
+.circle-group {
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+
+.circle {
+  width : 260px;
+  height : 260px;
+  border-radius: 50%;
+  background-color: #303030;
+  display: flex; /* Flexbox 레이아웃 사용 */
+  flex-direction: column; /* 요소들을 수직 방향으로 정렬 */
+  justify-content: center;
+
+  margin-top: 72px;
+}
+
+.circle p {
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.detail-gray {
-  margin-top: 2800px;
-  text-align: center;
+.circle pre {
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 4px;
+  margin-bottom: 0px;
 }
 
-.detail-red {
-  text-align: center;
+.detail-gray .circle:hover {
+  background-color: #575757;
 }
 
-.detail-green {
-  text-align: center;
+.detail-red .circle:hover {
+  background-color: #5B3B3B;
 }
 
-.detail-blue {
-  text-align: center;
+.detail-green .circle:hover {
+  background-color: #3D5B3E;
+}
+
+.detail-blue .circle:hover {
+  background-color: #40435B;
 }
 
 footer {
-  margin-top: 1200px;
+  margin-top: 356px;
 }
 
 footer img {

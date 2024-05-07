@@ -1,7 +1,8 @@
-document.getElementById('infoBtn').addEventListener('click', function() {
-  alert('Info 버튼이 클릭되었습니다.');
-});
+// window.onload = function () {
+//   var el = document.getElementById("circle-gray");
+//   el.onclick = hello;
+// }
 
-document.getElementById('aboutBtn').addEventListener('click', function() {
-  alert('About 버튼이 클릭되었습니다.');
-});
+// function hello()  {
+// alert('안녕하세요');
+// }

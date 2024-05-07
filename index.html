@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ressentiment</title>
+  <title>RESSENTIMENT</title>
   <link rel="stylesheet" href="style.css">
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,13 @@
 </head>
 <body>
   <header>
-    <div class="logo">Ressetiment</div>
+    <div class="logo">
+      <a href="./index.html" onclick="showAbout()">Ressentiment</a>
+    </div>
     <div class="menu">
       <!-- <a href="" onclick="showInfo()">Info</a> -->
-      <a href="./about.html" onclick="showAbout()">About</a>
+      <a class="first" href="./about.html" onclick="showAbout()">ABOUT</a>
+      <a href="./resource.html" onclick="showAbout()">RESOURCE</a>
     </div>
   </header>
   <div class="image-container">
@@ -29,25 +32,26 @@
   </div>
   <div class="centered-group">
     <div class="control-section">
-      <div class="control-img">
-        <img src="./source/img/control-image.png" alt="control">
-      </div>
       <div class="text-kr">
         <!-- 텍스트 내용 -->
-        <p>(임의) 관객이 구 형태의 컨트롤러를 직접 조작하고,<br>
-          그 행동의 결과를 실시간으로 모니터를 통해  확인할 수 있는 인터랙티브 미디어 아트</p>
+        <p>How to Interact</p>
+        <pre>구 형태의 컨트롤러를 관객이 다음과 같이 조작합니다.</pre>
+      </div>
+      <div class="control-img">
+        <img src="./source/img/control-image.png" alt="control">
       </div>
     </div>
     <div class="rere-section">
       <!-- 이미지 -->
       <div class="gif-text">
         <p>Introducing,</p>
-        <p class = "text-big">Rere</p>
+        <p class = "text-big">ReRe</p>
       </div>
       <div class="rere-img">
         <img src="./source/gif/blackBG_rere2.gif" alt="르르" width=40%>
       </div>
       <div class="gif-text-bottom">
+        <br><br>
         <p>
           관객과 작품의 상호작용 결과가 ‘르르’란 캐릭터로 표현됩니다.<br>
           다채로운 색상을 품은 르르가 사회 속에서 어떻게 변화하고, 또 변화시키는지 지켜보세요! 
@@ -56,24 +60,38 @@
     </div>
     <div class="detail-section">
       <div class="detail-title">
-        <pre>Details</pre>
+        <pre>Scenes</pre>
       </div>
       <div class="detail-context">
         <pre>관객과의 상호작용의 결과로 나온 색상, 즉 '개성'은 색과 빛으로 상징화됩니다.
         무채색의 도시에서 관객들의 참여로 인해 만들어진 르르가 도시를 어떻게 변화시킬까요?</pre>
+        <p>보고 싶은 도시를 선택해주세요</p>
       </div>
-
-      <div class="detail-gray">
-        <p>Default</p>
-      </div>
-      <div class="detail-red">
-        <p>Red</p>
-      </div>
-      <div class="detail-green">
-        <p>Green</p>
-      </div>
-      <div class="detail-blue">
-        <p>Blue</p>
+      <div class="circle-group">
+        <div class="detail-gray">
+          <div class="circle" id="circle-gray" onclick="location.href='https://rere-s3-01.s3.ap-northeast-2.amazonaws.com/webgl02/index.html';">
+            <p>01</p>
+            <pre>Gray</pre>
+          </div>
+        </div>
+        <div class="detail-red">
+          <div class="circle" id="circle-red">
+            <p>02</p>
+            <pre>Red</pre>
+          </div>
+        </div>
+        <div class="detail-green">
+          <div class="circle" id="circle-green">
+            <p>03</p>
+            <pre>Green</pre>
+          </div>
+        </div>
+        <div class="detail-blue">
+          <div class="circle" id="circle-blue">
+            <p>04</p>
+            <pre>Blue</pre>
+          </div>
+        </div>
       </div>
     </div>
   </div>  

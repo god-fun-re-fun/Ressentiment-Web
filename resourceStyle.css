@@ -9,7 +9,7 @@ body, header, nav {
   font-style: normal;
   line-height: normal;
 
-  height: 5000px;
+  height: 3000px;
   
 }
 
@@ -47,17 +47,67 @@ header {
   margin-right: 42px;
 }
 
-.about-image {
-  text-align: center; /* 이미지를 수평 중앙 정렬 */
-}
-
-.about-image img{
+.resource-banner img{
   width: 100%;
   height: auto;
 }
 
+.content-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+}
+
+.content-text  p {
+  margin-top: 250px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.056px;
+}
+
+.content-text  pre {
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.528px;
+
+  margin-bottom: 100px;
+}
+
+.content a {
+  text-decoration: none;
+  color: #222;
+}
+
+.content img {
+  width: 350px;
+  height: 350px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* 요소들을 수직 방향으로 정렬 */
+  justify-content: center;
+  align-items: center;
+}
+
+.examples {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.examples img {
+  width: 40%;
+  height: auto;
+}
+
 footer {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 footer img {

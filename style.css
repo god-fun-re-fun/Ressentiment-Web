@@ -298,11 +298,316 @@ footer img {
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
-  .logo {
-      height: 30px;
+  body, header, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+    color: #FFF;
+  
+    height: 3000px;
+    width: 100%;
   }
 
-  nav button {
-      padding: 5px 10px;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .logo a {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.528px;
+    color: white;
+    text-decoration: none; /* 밑줄 없애기 */
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none; /* 밑줄 없애기 */
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .menu .first {
+    margin-right: 12px;
+  }
+
+  /* 이미지를 배경으로 설정 */
+  .image-container {
+    display: flex; /* flex 컨테이너 설정 */
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 세로 방향 가운데 정렬 */
+    position: relative; /* 상대 위치 설정 */
+    width: 100%; /* 너비 설정 */
+    height: 261px; /* 높이 설정 */
+    background-image: url('./source/img/MainBG.png'); /* 이미지 경로 */
+    background-size: cover; /* 배경 이미지 커버 */
+    background-position: center; /* 배경 이미지 중앙 정렬 */
+    margin-top: 0px;
+  }
+
+  .image-text {
+    position: relative; /* 상대 위치 설정 */
+    z-index: 1; /* 텍스트가 이미지 위에 오도록 설정 */
+    margin-top: 162px;
+    width: 90%;
+  }
+
+  .text {
+    margin-bottom: 0px; /* 각 텍스트 블록 사이의 공간을 추가합니다. */
+    display: block; /* 블록 레벨 요소로 만들어 줄 바꿈 효과를 자동으로 적용합니다. */
+    font-size: 10px;
+  }
+
+  .day {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.55px;
+  }
+
+  /* 추가적으로 특정 클래스에 대한 스타일을 더 세밀하게 조정할 수 있습니다. 예를 들어: */
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .caption {
+    font-family: "Pretendard Variable";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.528px;
+  }
+
+  /* 가운데 정렬 그룹 */
+  .centered-group {
+    width: 90%;
+    margin: 0 auto; /* 수평 중앙 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 내부 요소 수평 중앙 정렬 */
+    justify-content: center; /* 내부 요소 수직 중앙 정렬 */
+  }
+
+  .control-section {
+    margin-top: 116px;
+  }
+
+  .control-img {
+    text-align: center;
+    width: 80%;
+  }
+
+  .control-img img {
+    width: 187.117px;
+    height: 106.481px;
+    flex-shrink: 0;
+  }
+
+  .text-kr {
+    color: #FFF;
+    font-style: normal;
+  }
+
+  .text-kr p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    text-align: center;
+  }
+
+  .text-kr pre {
+    font-family: "Pretendard Variable";
+    font-size: 10px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 150%; /* 54px */
+    letter-spacing: 0.792px;
+  }
+
+  /* 르르 안녕 섹션 */
+  .rere-section {
+    display: flex; /* flex 컨테이너 설정 */
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 세로 방향 가운데 정렬 */
+    position: relative; /* 상대 위치 설정 */
+    width: 140%; /* 너비 설정 */
+    height: 570px; /* 높이 설정 */
+    background-image: url('./source/gif/blackBG_rere2.gif'); /* 이미지 경로 */
+    background-size: cover; /* 배경 이미지 커버 */
+    background-position: center; /* 배경 이미지 중앙 정렬 */
+    margin-top: 260px;
+  }
+
+  .gif-text {
+    position: absolute; /* 텍스트를 절대 포지션으로 설정 */
+    width: 100%; /* 텍스트 영역을 이미지 너비와 동일하게 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정, 배경에 따라 변경 가능 */ /* 텍스트를 중앙 정렬 */
+    margin-left: -40px;
+    padding-top: 130px;
+  }
+
+  .rere-section p {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .rere-section pre {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+
+  .rere-section .text-big {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 0px;
+  }
+
+  .gif-text-bottom {
+    width: 200px;
+    color: #FFF;
+    font-family: "Pretendard Variable";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.528px;
+    white-space: normal;
+    word-break:keep-all;
+
+    margin-top: 132px;
+  }
+
+  .blank {
+    height: 12px;
+  }
+
+  .blank2 {
+    height: 0px;
+  }
+
+  /* 디테일 섹션 */
+  .detail-section {
+    margin-top: 295px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .detail-title pre {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .detail-context pre {
+    color: #FFF;
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.308px;
+  }
+
+  .detail-context p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.528px;
+
+    margin-top: 60px;
+  }
+
+  .circle-group {
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+  }
+
+  .circle {
+    width : 260px;
+    height : 260px;
+    border-radius: 50%;
+    background-color: #303030;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    flex-direction: column; /* 요소들을 수직 방향으로 정렬 */
+    justify-content: center;
+
+    margin-top: 72px;
+  }
+
+  .circle p {
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .circle pre {
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+
+  .detail-gray .circle:hover {
+    background-color: #575757;
+  }
+
+  .detail-red .circle:hover {
+    background-color: #5B3B3B;
+  }
+
+  .detail-green .circle:hover {
+    background-color: #3D5B3E;
+  }
+
+  .detail-blue .circle:hover {
+    background-color: #40435B;
+  }
+
+  footer {
+    margin-top: 356px;
+  }
+
+  footer img {
+    width: 90%;
+    height: auto;
   }
 }

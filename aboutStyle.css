@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body, header, nav {
   margin: 0;
   padding: 0;
@@ -63,4 +68,62 @@ footer {
 footer img {
   width: 90%;
   height: auto;
+}
+
+
+@media (max-width: 768px) {  
+  body, header, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+    color: #FFF;
+  
+    height: 3000px;
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .logo a {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.528px;
+    color: white;
+    text-decoration: none; /* 밑줄 없애기 */
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none; /* 밑줄 없애기 */
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .menu .first {
+    margin-right: 12px;
+  }
+  
+  .about-image img{
+    width: 100%;
+    height: auto;
+
+    content: url(./source/img/mobile-about.png);
+  }
+  
+  footer img {
+    width: 80%;
+    height: auto;
+    content: url(./source/img/mobile-footer.png);
+
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
 }

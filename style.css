@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body, header, nav {
   margin: 0;
   padding: 0;
@@ -138,15 +143,24 @@ header {
 }
 
 /* 르르 안녕 섹션 */
+
 .rere-section {
-  margin-top: 400px;
-  margin-left: 100px;
+  display: flex; /* flex 컨테이너 설정 */
+  width: 70%; /* 너비 설정 */
+  height: 729px; /* 높이 설정 */
+  background-image: url('./source/gif/blackBG_rere2.gif'); /* 이미지 경로 */
+  background-size: cover; /* 배경 이미지 커버 */
+  background-position: left; /* 배경 이미지 중앙 정렬 */
+  margin-top: 260px;
+  margin-left: 500px;
 }
 
 .gif-text {
   text-align: left;
   display: flex; /* Flexbox 레이아웃 사용 */
   flex-direction: column; /* 요소들을 수직 방향으로 정렬 */
+  margin-left: -300px;
+  margin-top: 120px;
 }
 
 .rere-section p {
@@ -166,23 +180,14 @@ header {
   margin-top: 0px;
 }
 
-.rere-section {
-  display: flex; /* Flexbox를 활용하여 내용을 가로로 배치 */
-  align-items: center; /* 세로 방향 가운데 정렬 */
-  justify-content: center; /* 수평 방향 가운데 정렬 */
-  gap: 20px; /* 내부 요소 사이의 간격 */
-  margin-left: 200px;
-}
-
-.rere-img img {
-  width: 645px;
-  height: auto; /* 이미지의 비율을 유지 */
+.gif-text-bottom {
+  margin-top: 55px;
 }
 
 .gif-text-bottom p {
   color: #FFF;
   font-family: "Pretendard Variable";
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 36px */
@@ -297,7 +302,7 @@ footer img {
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
   body, header, nav {
     margin: 0;
     padding: 0;
@@ -443,19 +448,21 @@ footer img {
     justify-content: center; /* 가운데 정렬 */
     align-items: center; /* 세로 방향 가운데 정렬 */
     position: relative; /* 상대 위치 설정 */
-    width: 140%; /* 너비 설정 */
-    height: 570px; /* 높이 설정 */
+    width: 100%; /* 너비 설정 */
+    height: 490px; /* 높이 설정 */
     background-image: url('./source/gif/blackBG_rere2.gif'); /* 이미지 경로 */
     background-size: cover; /* 배경 이미지 커버 */
     background-position: center; /* 배경 이미지 중앙 정렬 */
     margin-top: 260px;
+    margin-left: 200px;
   }
 
   .gif-text {
     position: absolute; /* 텍스트를 절대 포지션으로 설정 */
     width: 100%; /* 텍스트 영역을 이미지 너비와 동일하게 설정 */
     color: white; /* 텍스트 색상을 흰색으로 설정, 배경에 따라 변경 가능 */ /* 텍스트를 중앙 정렬 */
-    margin-left: -40px;
+    margin-left: -190px;
+    margin-top: -50px;
     padding-top: 130px;
   }
 
@@ -553,23 +560,23 @@ footer img {
   }
 
   .circle {
-    width : 260px;
-    height : 260px;
+    width : 160px;
+    height : 160px;
     border-radius: 50%;
     background-color: #303030;
     display: flex; /* Flexbox 레이아웃 사용 */
     flex-direction: column; /* 요소들을 수직 방향으로 정렬 */
     justify-content: center;
 
-    margin-top: 72px;
+    margin-top: 64px;
   }
 
   .circle p {
     color: #FFF;
     font-family: "Montserrat Alternates";
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -577,13 +584,12 @@ footer img {
 
   .circle pre {
     color: #FFF;
+    text-align: center;
     font-family: "Montserrat Alternates";
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    margin-top: 4px;
-    margin-bottom: 0px;
   }
 
   .detail-gray .circle:hover {
@@ -607,7 +613,11 @@ footer img {
   }
 
   footer img {
-    width: 90%;
+    width: 80%;
     height: auto;
+    content: url(./source/img/mobile-footer.png);
+
+    margin-left: 24px;
+    margin-bottom: 24px;
   }
 }

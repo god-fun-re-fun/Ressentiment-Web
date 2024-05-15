@@ -160,6 +160,13 @@ footer img {
     margin-right: 12px;
   }
 
+  .resource-banner img{
+    width: 100%;
+    height: auto;
+
+    content: url(./source/img/Mobile-download-banner.png);
+  }
+
   .content-text  p {
     margin-top: 120px;
     font-size: 24px;

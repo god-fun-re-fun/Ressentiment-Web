@@ -147,7 +147,7 @@ header {
 .rere-section {
   display: flex; /* flex 컨테이너 설정 */
   width: 70%; /* 너비 설정 */
-  height: 729px; /* 높이 설정 */
+  height: 779px; /* 높이 설정 */
   background-image: url('./source/gif/blackBG_rere2.gif'); /* 이미지 경로 */
   background-size: cover; /* 배경 이미지 커버 */
   background-position: left; /* 배경 이미지 중앙 정렬 */
@@ -280,16 +280,55 @@ header {
   background-color: #575757;
 }
 
-.detail-red .circle:hover {
-  background-color: #5B3B3B;
-}
-
 .detail-green .circle:hover {
   background-color: #3D5B3E;
 }
 
 .detail-blue .circle:hover {
   background-color: #40435B;
+}
+
+.goto-detail p {
+  margin-top: 464px;
+
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.528px;
+}
+
+.image-text-wrapper {
+  position: relative; /* 텍스트를 이미지 위에 절대 위치시키기 위해 */
+  display: inline-block; /* 이미지 크기에 맞춰서 컨테이너 크기 조정 */
+
+  margin-top: 103px;
+}
+
+.image-text-wrapper img {
+  width: 260px; /* 이미지 크기를 컨테이너에 맞춤 */
+  height: 260px; /* 이미지 비율 유지 */
+}
+
+.overlay-text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  position: absolute; /* 이미지 위에 텍스트를 배치 */
+  top: 50%; /* 상위 요소의 가운데 위치 */
+  left: 50%; /* 좌우 가운데 위치 */
+  transform: translate(-50%, -50%); /* 정확한 중앙 정렬을 위해 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  padding: 10px; /* 텍스트 주변 여백 추가 */
+  border-radius: 5px; /* 텍스트 배경 둥근 모서리 추가 */
 }
 
 footer {
@@ -310,7 +349,7 @@ footer img {
     background-color: #222;
     color: #FFF;
   
-    height: 3000px;
+    height: 1800px;
     width: 100%;
   }
 
@@ -386,7 +425,7 @@ footer img {
 
   .caption {
     font-family: "Pretendard Variable";
-    font-size: 10px;
+    font-size: 8px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 36px */
@@ -606,6 +645,15 @@ footer img {
 
   .detail-blue .circle:hover {
     background-color: #40435B;
+  }
+
+  .goto-detail p {
+    font-size: 14px;
+  }
+
+  .image-text-wrapper img {
+    width: 195px;
+    height: 195px;
   }
 
   footer {
